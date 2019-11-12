@@ -22,5 +22,6 @@ public class demo01MethodSame {
         }*/
         boolean same = a == b ? true:false;
         //return a==b;
+        return same;
     }
 }
