@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:26:50 +0800] "GET /maven_web HTTP/1.1" 302 - http-bio-8888-exec-1 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:26:51 +0800] "GET /maven_web/ HTTP/1.1" 200 52 http-bio-8888-exec-3 425
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:27:20 +0800] "GET /maven_web/MyServlet HTTP/1.1" 200 98 http-bio-8888-exec-4 74
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:03 +0800] "GET /maven_web/MyServlet HTTP/1.1" 500 3115 http-bio-8888-exec-1 54
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:12 +0800] "GET /maven_web HTTP/1.1" 302 - http-bio-8888-exec-2 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:12 +0800] "GET /maven_web/ HTTP/1.1" 500 3023 http-bio-8888-exec-4 32
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:23 +0800] "GET /maven_web/ HTTP/1.1" 500 3023 http-bio-8888-exec-5 10
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:27 +0800] "GET /maven_web/ HTTP/1.1" 500 3023 http-bio-8888-exec-6 4
+0:0:0:0:0:0:0:1 - - [18/Nov/2019:19:28:42 +0800] "GET /maven_web/ HTTP/1.1" 200 52 http-bio-8888-exec-1 51
