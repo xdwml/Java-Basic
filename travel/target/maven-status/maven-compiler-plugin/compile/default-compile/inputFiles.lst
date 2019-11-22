@@ -3,6 +3,7 @@ E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\Favorite.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\dao\impl\UserDaoImpl.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\service\UserService.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\Category.java
+E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\RegisterUserServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\util\MailUtils.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\Route.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\util\JedisUtil.java
@@ -13,6 +14,5 @@ E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\Seller.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\CheckCodeServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\service\impl\UserServiceImpl.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\util\JDBCUtils.java
-E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\RegistUserServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\dao\UserDao.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\User.java

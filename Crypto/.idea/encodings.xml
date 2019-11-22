@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ComputeTime/src/ComputeTime.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ComputeTime/src/TimeCountProxyHandle.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ComputeTime/src/computeOperation.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/ComputeTime.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/ComputeTime2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/ComputeTime4.java" charset="GBK" />
@@ -9,5 +12,7 @@
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/computeOperation2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/computeOperation3.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/IBE/src/ComputeTime/computeOperation5.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/IBE/src/IBE/BasicIdent2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/IBE/src/IBE/TimeCountProxyHandle.java" charset="GBK" />
   </component>
 </project>

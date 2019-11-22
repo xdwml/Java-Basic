@@ -6,6 +6,7 @@ package ComputeTime;
 import it.unisa.dia.gas.jpbc.*;
 import it.unisa.dia.gas.plaf.jpbc.pairing.PairingFactory;
 import java.lang.reflect.Proxy;
+
 public class computeOperation implements ComputeTime {
     public Element alpha,beta,g,g_alpha,h,g_hat_alpha,mul;
     public Pairing pairing;
@@ -44,7 +45,8 @@ public class computeOperation implements ComputeTime {
     public static void main(String[] args) {
         computeOperation com = new computeOperation();
         // 动态代理，统计各个方法耗时
-        ComputeTime comtime = (ComputeTime) Proxy.newProxyInstance(
+        ComputeTime comtime;
+        comtime = (ComputeTime) Proxy.newProxyInstance(
                 computeOperation.class.getClassLoader(),
                 new Class[] { ComputeTime.class }, new TimeCountProxyHandle(com));
         comtime.computePair();

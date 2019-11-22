@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Java-Web" target="1.8" />
       <module name="travel" target="1.8" />
     </bytecodeTargetLevel>
   </component>

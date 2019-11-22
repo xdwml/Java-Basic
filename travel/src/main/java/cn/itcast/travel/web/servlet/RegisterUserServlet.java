@@ -17,8 +17,8 @@ import java.util.Map;
 
 
 
-@WebServlet(name = "/registUserServlet")
-public class RegistUserServlet extends HttpServlet{
+@WebServlet(name = "/registerUserServlet")
+public class RegisterUserServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1.获取数据
         Map<String,String[]> map=request.getParameterMap();
@@ -55,7 +55,7 @@ public class RegistUserServlet extends HttpServlet{
         response.setContentType("application/json;charset=utf-8");
         response.getWriter().write(json);
         System.out.println("json成功");
-        
+
 
     }
 
@@ -63,3 +63,4 @@ public class RegistUserServlet extends HttpServlet{
         this.doPost(request,response);
     }
 }
+
