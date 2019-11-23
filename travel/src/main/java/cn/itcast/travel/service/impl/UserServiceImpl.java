@@ -19,13 +19,10 @@ public class UserServiceImpl implements UserService{
         //判断u是否为null
         if(u!=null){
             //用户名存在，注册失败
-            System.out.println("用户名存在，注册失败");
             return false;
-
         }
         //2.保存用户信息
         userDao.save(user);
-        System.out.println("用户名不存在，注册成功");
         return true;
     }
 }

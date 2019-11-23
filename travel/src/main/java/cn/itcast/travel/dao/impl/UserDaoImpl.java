@@ -3,7 +3,6 @@ package cn.itcast.travel.dao.impl;
 import cn.itcast.travel.dao.UserDao;
 import cn.itcast.travel.domain.User;
 import cn.itcast.travel.util.JDBCUtils;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,22 +19,20 @@ public class UserDaoImpl implements UserDao{
         } catch (Exception e) {
 
         }
-        System.out.println("查询成功");
         return user;
     }
 
     @Override
     public void save(User user) {
         //1.定义sql
-        String sql="insert into tab_user(username,password,name,birthday,sex,telephone,email)"+"values(?,?,?,?,?,?,?)";
+        String sql="insert into tab_user(username,password,name,birthday,sex,telephone,email) values(?,?,?,?,?,?,?)";
         //2.执行sql
         template.update(sql,user.getUsername(),
-                            user.getPassword(),
-                            user.getName(),
-                            user.getBirthday(),
-                            user.getSex(),
-                            user.getTelephone(),
-                            user.getEmail());
-        System.out.println("保存成功");
+                user.getPassword(),
+                user.getName(),
+                user.getBirthday(),
+                user.getSex(),
+                user.getTelephone(),
+                user.getEmail());
     }
 }

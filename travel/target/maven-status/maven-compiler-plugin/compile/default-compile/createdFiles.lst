@@ -2,7 +2,6 @@ cn\itcast\travel\util\JDBCUtils.class
 cn\itcast\travel\domain\Seller.class
 cn\itcast\travel\util\Md5Util.class
 cn\itcast\travel\web\servlet\CheckCodeServlet.class
-cn\itcast\travel\web\servlet\RegisterUserServlet.class
 cn\itcast\travel\dao\UserDao.class
 cn\itcast\travel\service\UserService.class
 cn\itcast\travel\util\MailUtils.class
@@ -10,6 +9,7 @@ cn\itcast\travel\domain\RouteImg.class
 cn\itcast\travel\util\JedisUtil.class
 cn\itcast\travel\util\MailUtils$1.class
 cn\itcast\travel\dao\impl\UserDaoImpl.class
+cn\itcast\travel\web\servlet\RegistUserServlet.class
 cn\itcast\travel\util\UuidUtil.class
 cn\itcast\travel\domain\User.class
 cn\itcast\travel\domain\ResultInfo.class

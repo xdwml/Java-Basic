@@ -11,18 +11,38 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
-
-
-@WebServlet(name = "/registerUserServlet")
-public class RegisterUserServlet extends HttpServlet{
+@WebServlet("/registUserServlet")
+public class RegistUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //验证码校验
+        //从前台获取验证码
+        String check=request.getParameter("check");
+        //从session中获取验证码
+        HttpSession session = request.getSession();
+        String checkcode_server = (String) session.getAttribute("CHECKCODE_SERVER");
+        session.removeAttribute("CHECKCODE_SERVER");//用完移除验证码，为了保证验证码只能使用一次
+        //比较验证码是否一致,忽略大小写
+        if(checkcode_server==null||!checkcode_server.equalsIgnoreCase(check)){
+            //验证码错误
+            ResultInfo info=new ResultInfo();
+            //验证失败
+            info.setFlag(false);
+            info.setErrorMsg("验证码错误！");
+            //将info对象序列化为json
+            ObjectMapper mapper=new ObjectMapper();
+            String json=mapper.writeValueAsString(info);
+            //将json数据写回客户端
+            response.setContentType("application/json;charset=utf-8");//设置content-type
+            response.getWriter().write(json);
+            return;
+        }
         //1.获取数据
         Map<String,String[]> map=request.getParameterMap();
-        System.out.println("获取数据成功");
         //2.封装对象
         User user=new User();
         try {
@@ -40,27 +60,20 @@ public class RegisterUserServlet extends HttpServlet{
         if(flag){
             //注册成功
             info.setFlag(true);
-            System.out.println("注册成功");
         }else{
             //注册失败
             info.setFlag(false);
             info.setErrorMsg("注册失败！");
-            System.out.println("注册失败");
         }
         //将info对象序列化为json
         ObjectMapper mapper=new ObjectMapper();
         String json=mapper.writeValueAsString(info);
         //将json数据写回客户端
-        //设置content-type
-        response.setContentType("application/json;charset=utf-8");
+        response.setContentType("application/json;charset=utf-8");//设置content-type
         response.getWriter().write(json);
-        System.out.println("json成功");
-
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doPost(request,response);
     }
 }
-

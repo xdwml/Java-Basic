@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Code_05_MergeSort {
-
+	//归并排序
 	public static void mergeSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -13,9 +13,9 @@ public class Code_05_MergeSort {
 		if (l == r) {
 			return;
 		}
-		int mid = l + ((r - l) >> 1);
-		mergeSort(arr, l, mid);
-		mergeSort(arr, mid + 1, r);
+		int mid = l + ((r - l) >> 1);//L和R中间的点
+		mergeSort(arr, l, mid);//左部分排序
+		mergeSort(arr, mid + 1, r);//右部分排序
 		merge(arr, l, mid, r);
 	}
 
@@ -24,9 +24,11 @@ public class Code_05_MergeSort {
 		int i = 0;
 		int p1 = l;
 		int p2 = m + 1;
+		//谁小填谁
 		while (p1 <= m && p2 <= r) {
 			help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
 		}
+		//两个必有且只有一个越界
 		while (p1 <= m) {
 			help[i++] = arr[p1++];
 		}

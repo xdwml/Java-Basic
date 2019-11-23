@@ -14,17 +14,20 @@ public class Code_01_InsertionSort {
 	}
 
 	public static void swap(int[] arr, int i, int j) {
-		arr[i] = arr[i] ^ arr[j];
+/*		arr[i] = arr[i] ^ arr[j];
 		arr[j] = arr[i] ^ arr[j];
-		arr[i] = arr[i] ^ arr[j];
+		arr[i] = arr[i] ^ arr[j];*/
+		int tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp;
 	}
-
+/*************对数器验证************/
 	// for test
 	public static void comparator(int[] arr) {
 		Arrays.sort(arr);
 	}
 
-	// for test
+	// for test  产生随机样本
 	public static int[] generateRandomArray(int maxSize, int maxValue) {
 		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
 		for (int i = 0; i < arr.length; i++) {
