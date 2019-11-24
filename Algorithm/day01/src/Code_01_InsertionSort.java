@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/**
+ *插入排序算法
+ */
 public class Code_01_InsertionSort {
 
 	public static void insertionSort(int[] arr) {

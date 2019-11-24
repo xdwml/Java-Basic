@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/**
+ *随机快速排序算法
+ */
 public class Code_04_QuickSort {
 
 	public static void quickSort(int[] arr) {
@@ -11,16 +13,17 @@ public class Code_04_QuickSort {
 
 	public static void quickSort(int[] arr, int l, int r) {
 		if (l < r) {
-			swap(arr, l + (int) (Math.random() * (r - l + 1)), r);
+			//加上此条为随机快排,随机选择一个位置和最后一个交换，保证代码复用
+			//swap(arr, l + (int) (Math.random() * (r - l + 1)), r);忽略此条之后为经典快排
 			int[] p = partition(arr, l, r);
 			quickSort(arr, l, p[0] - 1);
 			quickSort(arr, p[1] + 1, r);
 		}
 	}
-
+	//荷兰国旗问题，默认最后一个数作为划分
 	public static int[] partition(int[] arr, int l, int r) {
 		int less = l - 1;
-		int more = r;
+		int more = r;//more处的值不参与遍历
 		while (l < more) {
 			if (arr[l] < arr[r]) {
 				swap(arr, ++less, l++);

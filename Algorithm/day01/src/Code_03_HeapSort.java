@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/**
+ *堆排序算法
+ */
 public class Code_03_HeapSort {
 
 	public static void heapSort(int[] arr) {
@@ -7,7 +9,7 @@ public class Code_03_HeapSort {
 			return;
 		}
 		for (int i = 0; i < arr.length; i++) {
-			heapInsert(arr, i);
+			heapInsert(arr, i);//0~i变成大根堆
 		}
 		int size = arr.length;
 		swap(arr, 0, --size);
@@ -16,14 +18,14 @@ public class Code_03_HeapSort {
 			swap(arr, 0, --size);
 		}
 	}
-
+	//把数组建立大根堆
 	public static void heapInsert(int[] arr, int index) {
 		while (arr[index] > arr[(index - 1) / 2]) {
 			swap(arr, index, (index - 1) / 2);
 			index = (index - 1) / 2;
 		} 
 	}
-
+	//数组变化，变换大根堆
 	public static void heapify(int[] arr, int index, int size) {
 		int left = index * 2 + 1;
 		while (left < size) {

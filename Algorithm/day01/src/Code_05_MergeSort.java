@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/**
+ *归并排序算法
+ */
 public class Code_05_MergeSort {
 	//归并排序
 	public static void mergeSort(int[] arr) {

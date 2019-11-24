@@ -1,3 +1,6 @@
+/**
+ *小和问题
+ */
 public class Code_12_SmallSum {
 
 	public static int smallSum(int[] arr) {

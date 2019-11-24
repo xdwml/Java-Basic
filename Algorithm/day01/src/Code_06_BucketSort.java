@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/**
+ *桶排序算法
+ */
 public class Code_06_BucketSort {
 
 	// only for 0~200 value
