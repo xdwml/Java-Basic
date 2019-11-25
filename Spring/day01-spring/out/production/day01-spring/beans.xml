@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!--配置一个bean【对象】-->
+    <bean id="userService" class="edu.xidian.service.UserServiceImpl">
+        <!--依赖注入数据，调用属性的set方法-->
+        <property name="name" value="zhangsan"></property>
+
+    </bean>
+
+</beans>
