@@ -1,15 +1,19 @@
 import java.util.Stack;
 
+/**
+ *实现一个特殊的栈， 在实现栈的基本功能的基础上，
+ *再实现返回栈中最小元素的操作。
+ */
 public class Code_02_GetMinStack {
 	public static class MyStack1 {
 		private Stack<Integer> stackData;
 		private Stack<Integer> stackMin;
-
+		//建两个栈，衣蛾数据栈，一个最小栈
 		public MyStack1() {
 			this.stackData = new Stack<Integer>();
 			this.stackMin = new Stack<Integer>();
 		}
-
+		//压栈
 		public void push(int newNum) {
 			if (this.stackMin.isEmpty()) {
 				this.stackMin.push(newNum);
@@ -18,7 +22,7 @@ public class Code_02_GetMinStack {
 			}
 			this.stackData.push(newNum);
 		}
-
+		//弹栈
 		public int pop() {
 			if (this.stackData.isEmpty()) {
 				throw new RuntimeException("Your stack is empty.");

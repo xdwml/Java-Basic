@@ -1,3 +1,6 @@
+/**
+ * 用数组结构实现大小固定的队列和栈
+ */
 public class Code_01_Array_To_Stack_Queue {
 	//固定数组大小实现栈
 	public static class ArrayStack {

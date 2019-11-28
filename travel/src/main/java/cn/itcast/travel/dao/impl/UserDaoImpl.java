@@ -49,7 +49,9 @@ public class UserDaoImpl implements UserDao{
     public User findByCode(String code) {
         User user=null;
         try {
+            //1.定义sql
             String sql="select * from tab_user where code = ?";
+            //2.执行sql
             user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), code);
         } catch (DataAccessException e) {
             e.printStackTrace();
@@ -65,5 +67,25 @@ public class UserDaoImpl implements UserDao{
     public void updateStatus(User user) {
         String sql="update tab_user set status = 'Y' where uid = ?";
         template.update(sql,user.getUid());
+    }
+
+    /**
+     * 根据用户名和密码查询的方法
+     * @param username
+     * @param password
+     * @return
+     */
+    @Override
+    public User findByUsernameAndPassword(String username, String password) {
+        User user=null;
+        try {
+            //1.定义sql
+            String sql="select * from tab_user where username = ? and password = ?";
+            //2.执行sql
+            user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username,password);
+        } catch (DataAccessException e) {
+
+        }
+        return user;
     }
 }

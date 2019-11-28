@@ -2,6 +2,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+/**
+ *如何仅用队列结构实现栈结构？
+ 如何仅用栈结构实现队列结构？
+ */
 public class Code_03_StackAndQueueConvert {
 
 	public static class TwoStacksQueue {

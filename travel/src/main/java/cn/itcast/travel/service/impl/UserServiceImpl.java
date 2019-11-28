@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService{
         user.setStatus("N");//未激活为N,激活为Y
         userDao.save(user);
         //3.激活邮件发送
-        String content="<a href='http://localhost:80/travle/activeUserServlet?code="+user.getCode()+"'>点击激活【黑马旅游网】</a>";
+        String content="<a href='http://localhost/travel/activeUserServlet?code="+user.getCode()+"'>点击激活【黑马旅游网】</a>";
         MailUtils.sendMail(user.getEmail(),content,"激活邮件");
         return true;
     }
@@ -51,5 +51,16 @@ public class UserServiceImpl implements UserService{
         }else{
             return false;
         }
+    }
+
+    /**
+     * 登录方法
+     * @param user
+     * @return
+     */
+    @Override
+    public User login(User user) {
+
+        return userDao.findByUsernameAndPassword(user.getUsername(),user.getPassword());
     }
 }

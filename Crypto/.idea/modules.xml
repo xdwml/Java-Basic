@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ComputeTime/ComputeTime.iml" filepath="$PROJECT_DIR$/ComputeTime/ComputeTime.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crypto.iml" filepath="$PROJECT_DIR$/Crypto.iml" />
       <module fileurl="file://$PROJECT_DIR$/IBE/IBE.iml" filepath="$PROJECT_DIR$/IBE/IBE.iml" />
     </modules>
