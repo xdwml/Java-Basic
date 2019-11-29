@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
@@ -28,9 +29,10 @@ public class LoginServlet extends HttpServlet {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+
         //3.调用Service查询
         UserService service=new UserServiceImpl();
-        User u=service.login(user);
+        User u=service.login(user);//数据比较全的U对象
 
         ResultInfo info=new ResultInfo();
         //4.判断用户对象是否为null
@@ -47,8 +49,10 @@ public class LoginServlet extends HttpServlet {
         }
         //6.判断登陆成功
         if(u !=null && "Y".equals(u.getStatus()) ){
+            request.getSession().setAttribute("user",u);//登录成功标记
            //登录成功
             info.setFlag(true);
+
         }
         //响应数据
         ObjectMapper mapper=new ObjectMapper();
