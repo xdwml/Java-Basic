@@ -1,8 +1,6 @@
 package edu.xidian.test;
 
-
 import edu.xidian.service.UserService;
-import edu.xidian.service.UserServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
