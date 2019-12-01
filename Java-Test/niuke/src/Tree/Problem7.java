@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class TreeAndQueue {
+public class Problem7 {
     public static class TwoStacksQueue {
         private Stack<Integer> stackPush;
         private Stack<Integer> stackPop;
