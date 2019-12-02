@@ -1,3 +1,6 @@
+/**
+ * 反转单向和双向链表
+ */
 public class Code_07_ReverseList {
 
 	public static class Node {

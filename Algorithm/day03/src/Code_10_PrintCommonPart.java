@@ -1,3 +1,6 @@
+/**
+ * 打印两个有序链表的公共部分
+ */
 public class Code_10_PrintCommonPart {
 
 	public static class Node {

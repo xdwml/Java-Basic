@@ -1,5 +1,7 @@
 import java.util.Stack;
-
+/**
+ * 判断一个链表是否为回文结构
+ */
 public class Code_11_IsPalindromeList {
 
 	public static class Node {
@@ -11,7 +13,7 @@ public class Code_11_IsPalindromeList {
 		}
 	}
 
-	// need n extra space
+	//方法1 need n extra space
 	public static boolean isPalindrome1(Node head) {
 		Stack<Node> stack = new Stack<Node>();
 		Node cur = head;
@@ -28,7 +30,7 @@ public class Code_11_IsPalindromeList {
 		return true;
 	}
 
-	// need n/2 extra space
+	//方法2 need n/2 extra space
 	public static boolean isPalindrome2(Node head) {
 		if (head == null || head.next == null) {
 			return true;
@@ -53,7 +55,7 @@ public class Code_11_IsPalindromeList {
 		return true;
 	}
 
-	// need O(1) extra space
+	//方法3 need O(1) extra space
 	public static boolean isPalindrome3(Node head) {
 		if (head == null || head.next == null) {
 			return true;

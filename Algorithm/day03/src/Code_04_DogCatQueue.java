@@ -1,6 +1,9 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 猫狗队列 【 题目】 宠物、 狗和猫的类如下：
+ */
 public class Code_04_DogCatQueue {
 
 	public static class Pet {
@@ -26,12 +29,12 @@ public class Code_04_DogCatQueue {
 			super("cat");
 		}
 	}
-
-	public static class PetEnterQueue {
+	//自定义宠物进队列的类
+	public static class PetEnter {
 		private Pet pet;
 		private long count;
 
-		public PetEnterQueue(Pet pet, long count) {
+		public PetEnter(Pet pet, long count) {
 			this.pet = pet;
 			this.count = count;
 		}
@@ -50,21 +53,21 @@ public class Code_04_DogCatQueue {
 	}
 
 	public static class DogCatQueue {
-		private Queue<PetEnterQueue> dogQ;
-		private Queue<PetEnterQueue> catQ;
+		private Queue<PetEnter> dogQ;
+		private Queue<PetEnter> catQ;
 		private long count;
 
 		public DogCatQueue() {
-			this.dogQ = new LinkedList<PetEnterQueue>();
-			this.catQ = new LinkedList<PetEnterQueue>();
+			this.dogQ = new LinkedList<PetEnter>();
+			this.catQ = new LinkedList<PetEnter>();
 			this.count = 0;
 		}
 
 		public void add(Pet pet) {
 			if (pet.getPetType().equals("dog")) {
-				this.dogQ.add(new PetEnterQueue(pet, this.count++));
+				this.dogQ.add(new PetEnter(pet, this.count++));
 			} else if (pet.getPetType().equals("cat")) {
-				this.catQ.add(new PetEnterQueue(pet, this.count++));
+				this.catQ.add(new PetEnter(pet, this.count++));
 			} else {
 				throw new RuntimeException("err, not dog or cat");
 			}
