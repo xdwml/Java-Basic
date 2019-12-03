@@ -16,7 +16,9 @@ E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\RouteImg.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\Seller.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\CheckCodeServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\service\impl\UserServiceImpl.java
+E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\BaseServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\util\JDBCUtils.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\RegistUserServlet.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\dao\UserDao.java
 E:\IDEA\travel\src\main\java\cn\itcast\travel\domain\User.java
+E:\IDEA\travel\src\main\java\cn\itcast\travel\web\servlet\UserServlet.java

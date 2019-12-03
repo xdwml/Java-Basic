@@ -18,7 +18,7 @@ import java.util.Map;
 
 @WebServlet("/registUserServlet")
 public class RegistUserServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //验证码校验
         //从前台获取验证码
         String check=request.getParameter("check");
