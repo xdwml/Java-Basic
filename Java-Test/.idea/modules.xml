@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java-Test.iml" filepath="$PROJECT_DIR$/Java-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode/String.iml" filepath="$PROJECT_DIR$/LeetCode/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/niuke/niuke.iml" filepath="$PROJECT_DIR$/niuke/niuke.iml" />
     </modules>
   </component>

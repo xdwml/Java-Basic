@@ -1,5 +1,8 @@
 package utils;
 
+/**
+ * 二叉树
+ */
 public class TreeNode {
 
     public int value;
