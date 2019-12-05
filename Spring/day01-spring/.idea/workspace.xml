@@ -319,14 +319,11 @@
       <workItem from="1574662125510" duration="3548000" />
       <workItem from="1575032964768" duration="1531000" />
       <workItem from="1575077664864" duration="14000" />
-      <workItem from="1575552886156" duration="308000" />
+      <workItem from="1575552886156" duration="391000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lesson01_test1 - 2019.11.29 at 21h 20m 43s.xml">
-      <configuration name="lesson01.test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="lesson01_test1 - 2019.11.29 at 21h 21m 47s.xml">
       <configuration name="lesson01.test1" configurationId="JUnit" />
     </history-entry>
@@ -334,6 +331,9 @@
       <configuration name="lesson01.test1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="lesson01_test1 - 2019.11.29 at 21h 29m 38s.xml">
+      <configuration name="lesson01.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="lesson01_test1 - 2019.12.05 at 21h 42m 27s.xml">
       <configuration name="lesson01.test1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="lesson02_test1 - 2019.11.25 at 14h 49m 37s.xml">
@@ -356,11 +356,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5401000" />
+    <option name="totallyTimeSpent" value="5484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -370,7 +369,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
