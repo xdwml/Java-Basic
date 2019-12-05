@@ -11,8 +11,8 @@ public class Problem17 {
 		}else if(list2==null){
 			return list1;
 		}
-		ListNode mergeHead=null;
-		if(list1.value<=list2.value)
+		ListNode mergeHead;
+		if(list1.val<=list2.val)
 		{
 			mergeHead=list1;
 			mergeHead.next=merge(list1.next,list2);

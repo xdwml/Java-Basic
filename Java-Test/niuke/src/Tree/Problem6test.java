@@ -20,6 +20,6 @@ public class Problem6test {
 
 		posOrderRecur(head.left);//先打印左孩子
 		posOrderRecur(head.right);//再打印右孩子
-		System.out.print(head.value + " ");//最后打印头
+		System.out.print(head.val + " ");//最后打印头
 	}
 }

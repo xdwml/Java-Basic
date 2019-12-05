@@ -1,10 +1,10 @@
 package utils;
 
 public class ListNode {
-    public int value;
+    public int val;
     public ListNode next=null;
 
     public ListNode(int val) {
-        this.value = val;
+        this.val= val;
     }
 }

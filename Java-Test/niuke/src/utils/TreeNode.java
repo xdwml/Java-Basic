@@ -5,10 +5,10 @@ package utils;
  */
 public class TreeNode {
 
-    public int value;
+    public int val;
     public TreeNode left;
     public TreeNode right;
     public TreeNode(int x) {
-        this.value = x;
+        this.val = x;
     }
 }

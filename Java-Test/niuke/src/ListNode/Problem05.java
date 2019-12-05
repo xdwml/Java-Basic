@@ -15,7 +15,7 @@ public class Problem05 {
         }
         while(!stack.isEmpty())
         {
-            System.out.print(stack.pop().value+"<--");
+            System.out.print(stack.pop().val+"<--");
         }
     }
 }
