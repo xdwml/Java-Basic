@@ -15,4 +15,8 @@ public class UserServiceImpl implements UserService {
     public void add() {
         System.out.println("创建用户..."+name);
     }
+
+    public UserServiceImpl() {
+        System.out.println("UserServiceImpl()调用了");
+    }
 }

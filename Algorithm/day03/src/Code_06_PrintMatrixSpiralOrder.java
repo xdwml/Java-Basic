@@ -8,12 +8,12 @@
 public class Code_06_PrintMatrixSpiralOrder {
 
 	public static void spiralOrderPrint(int[][] matrix) {
-		int tR = 0;
-		int tC = 0;
-		int dR = matrix.length - 1;
-		int dC = matrix[0].length - 1;
-		while (tR <= dR && tC <= dC) {
-			printEdge(matrix, tR++, tC++, dR--, dC--);
+		int a = 0;
+		int b = 0;
+		int c = matrix.length - 1;
+		int d = matrix[0].length - 1;
+		while (a <= c && b <= d) {
+			printEdge(matrix, a++, b++, c--, d--);
 		}
 	}
 
