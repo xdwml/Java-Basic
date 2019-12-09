@@ -1,6 +1,9 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 二叉树的序列化和反序列化
+ */
 public class Code_04_SerializeAndReconstructTree {
 
 	public static class Node {
@@ -13,6 +16,11 @@ public class Code_04_SerializeAndReconstructTree {
 		}
 	}
 
+	/**
+	 * 序列化
+	 * @param head
+	 * @return
+	 */
 	public static String serialByPre(Node head) {
 		if (head == null) {
 			return "#!";
@@ -23,6 +31,11 @@ public class Code_04_SerializeAndReconstructTree {
 		return res;
 	}
 
+	/**
+	 * 反序列化
+	 * @param preStr
+	 * @return
+	 */
 	public static Node reconByPreString(String preStr) {
 		String[] values = preStr.split("!");
 		Queue<String> queue = new LinkedList<String>();
@@ -32,6 +45,11 @@ public class Code_04_SerializeAndReconstructTree {
 		return reconPreOrder(queue);
 	}
 
+	/**
+	 * 先序遍历
+	 * @param queue
+	 * @return
+	 */
 	public static Node reconPreOrder(Queue<String> queue) {
 		String value = queue.poll();
 		if (value.equals("#")) {

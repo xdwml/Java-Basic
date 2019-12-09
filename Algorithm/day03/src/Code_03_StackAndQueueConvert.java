@@ -18,6 +18,7 @@ public class Code_03_StackAndQueueConvert {
 		}
 
 		public void push(int pushInt) {
+
 			stackPush.push(pushInt);
 		}
 

@@ -1,3 +1,6 @@
+/**
+ * 在二叉树中找到一个节点的后继节点
+ */
 public class Code_03_SuccessorNode {
 
 	public static class Node {
