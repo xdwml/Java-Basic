@@ -1,9 +1,7 @@
 package ListNode;
 import utils.ListNode;
 
-import java.util.ArrayList;
-
-public class Problem15Test {
+public class Problem16Test {
     public static void main (String args[])
     {
         ListNode head=new ListNode(10);
@@ -25,9 +23,9 @@ public class Problem15Test {
         node6.next=node7;
         node7.next=node8;
         node8.next=node9;
-        Problem15 test=new Problem15();
-        //test.printListReverse(node1);
-        ListNode node=test.FindKthToTail(node1,6);
+        Problem16 test=new Problem16();
+
+        ListNode node=test.ReverseList(node1);
         System.out.println(node.val);
     }
 }

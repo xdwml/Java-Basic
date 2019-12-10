@@ -14,9 +14,9 @@ public class Problem15 {
         for(int i=0;i<k-1;++i)
         {
             if(list.next!=null)
-                list=list.next;
+                list=list.next;//判断走到头了
             else
-                return null;
+                return null;//如果节点数小于K，返回空
         }
         result=head;//赋值
         while(list.next!=null)
