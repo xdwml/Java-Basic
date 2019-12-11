@@ -14,10 +14,9 @@ public class Problem23 {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
-            //TreeNode node = queue.remove();
-            TreeNode node = queue.
+            TreeNode node = queue.poll();
             if (node == null) {
-                continue;
+                continue;//结束本次循环，继续下一次循环
             }
             list.add(node.val);
             queue.add(node.left);
