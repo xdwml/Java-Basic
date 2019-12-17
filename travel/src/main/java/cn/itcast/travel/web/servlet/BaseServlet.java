@@ -1,5 +1,8 @@
 package cn.itcast.travel.web.servlet;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,7 +39,27 @@ public class BaseServlet extends HttpServlet {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
 
+    /**
+     * 直接将传入的对象序列化json,并且写回客户端
+     * @param obj
+     * @param response
+     * @throws IOException
+     */
+    public void writeValue(Object obj,HttpServletResponse response) throws IOException {
+        ObjectMapper mapper=new ObjectMapper();
+        response.setContentType("application/json;charset=utf-8");//设置content-type
+        mapper.writeValue(response.getOutputStream(),obj);
+    }
 
+    /**
+     * 将传入的对象序列化为json，返回字符串
+     * @param obj
+     * @return
+     */
+    public String  writeValueAsString(Object obj) throws JsonProcessingException {
+        ObjectMapper mapper=new ObjectMapper();
+        return mapper.writeValueAsString(obj);
     }
 }
